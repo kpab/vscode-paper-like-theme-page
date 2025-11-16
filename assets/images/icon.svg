@@ -1,0 +1,77 @@
+<svg width="128" height="128" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+  <!-- Paper background with slight texture -->
+  <defs>
+    <filter id="paper-texture">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="4" result="noise" />
+      <feDiffuseLighting in="noise" lighting-color="#F5F0E6" surfaceScale="1">
+        <feDistantLight azimuth="45" elevation="60" />
+      </feDiffuseLighting>
+    </filter>
+    <linearGradient id="paper-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FAF5EB;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#F0EBE1;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Paper background -->
+  <rect width="128" height="128" rx="16" fill="url(#paper-gradient)" />
+  <rect width="128" height="128" rx="16" fill="#F5F0E6" opacity="0.95" />
+
+  <!-- Paper edge shadow -->
+  <path d="M 16 0 Q 0 0 0 16 L 0 112 Q 0 128 16 128 L 112 128 Q 128 128 128 112 L 128 16 Q 128 0 112 0 Z"
+        fill="none" stroke="#D9CBB4" stroke-width="0.5" opacity="0.6" />
+
+  <!-- Notebook lines (subtle) -->
+  <line x1="20" y1="35" x2="108" y2="35" stroke="#E3D7C4" stroke-width="0.8" opacity="0.5" />
+  <line x1="20" y1="50" x2="108" y2="50" stroke="#E3D7C4" stroke-width="0.8" opacity="0.5" />
+  <line x1="20" y1="65" x2="108" y2="65" stroke="#E3D7C4" stroke-width="0.8" opacity="0.5" />
+  <line x1="20" y1="80" x2="108" y2="80" stroke="#E3D7C4" stroke-width="0.8" opacity="0.5" />
+  <line x1="20" y1="95" x2="108" y2="95" stroke="#E3D7C4" stroke-width="0.8" opacity="0.5" />
+
+  <!-- Code snippet in ink style -->
+  <!-- function keyword -->
+  <text x="24" y="45" font-family="'Courier New', monospace" font-size="11" font-weight="bold" fill="#854D2C">fn</text>
+
+  <!-- function name -->
+  <text x="42" y="45" font-family="'Courier New', monospace" font-size="11" fill="#6C3F2C">code</text>
+
+  <!-- brackets -->
+  <text x="70" y="45" font-family="'Courier New', monospace" font-size="11" fill="#4A3C2E">()</text>
+
+  <!-- opening brace -->
+  <text x="86" y="45" font-family="'Courier New', monospace" font-size="11" fill="#4A3C2E">{</text>
+
+  <!-- let keyword -->
+  <text x="30" y="60" font-family="'Courier New', monospace" font-size="10" font-weight="bold" fill="#854D2C">let</text>
+
+  <!-- variable -->
+  <text x="52" y="60" font-family="'Courier New', monospace" font-size="10" fill="#3A2E23">x</text>
+
+  <!-- equals -->
+  <text x="62" y="60" font-family="'Courier New', monospace" font-size="10" fill="#4A3C2E">=</text>
+
+  <!-- number -->
+  <text x="72" y="60" font-family="'Courier New', monospace" font-size="10" fill="#A86434">42</text>
+
+  <!-- semicolon -->
+  <text x="87" y="60" font-family="'Courier New', monospace" font-size="10" fill="#4A3C2E">;</text>
+
+  <!-- return keyword -->
+  <text x="30" y="75" font-family="'Courier New', monospace" font-size="10" font-weight="bold" fill="#854D2C">ret</text>
+
+  <!-- variable -->
+  <text x="54" y="75" font-family="'Courier New', monospace" font-size="10" fill="#3A2E23">x</text>
+
+  <!-- semicolon -->
+  <text x="64" y="75" font-family="'Courier New', monospace" font-size="10" fill="#4A3C2E">;</text>
+
+  <!-- closing brace -->
+  <text x="24" y="90" font-family="'Courier New', monospace" font-size="11" fill="#4A3C2E">}</text>
+
+  <!-- Comment -->
+  <text x="30" y="105" font-family="'Courier New', monospace" font-size="9" font-style="italic" fill="#9E9386">// paper</text>
+
+  <!-- Decorative corner fold (top-right) -->
+  <path d="M 100 12 L 116 12 L 116 28" fill="none" stroke="#D9CBB4" stroke-width="1.5" opacity="0.4" />
+  <path d="M 100 12 L 108 12 L 108 20 Z" fill="#E8DCC8" opacity="0.5" />
+</svg>

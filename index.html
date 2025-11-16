@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <title>Paper Notebook Light - VS Code Theme</title>
+    <meta name="description" content="A warm, paper-like light theme for VS Code with ink-style colors. Experience the feeling of writing with ink on slightly yellowed paper.">
+    <meta name="keywords" content="vscode, theme, paper, notebook, light theme, coding, editor, ink, warm colors">
+    <meta name="author" content="kpab">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://kpab.github.io/vscode-paper-like-theme-page/">
+    <meta property="og:title" content="Paper Notebook Light - VS Code Theme">
+    <meta property="og:description" content="A warm, paper-like light theme for VS Code with ink-style colors.">
+    <meta property="og:image" content="./assets/images/icon.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://kpab.github.io/vscode-paper-like-theme-page/">
+    <meta property="twitter:title" content="Paper Notebook Light - VS Code Theme">
+    <meta property="twitter:description" content="A warm, paper-like light theme for VS Code with ink-style colors.">
+    <meta property="twitter:image" content="./assets/images/icon.png">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="./assets/images/icon.svg">
+    <link rel="icon" type="image/png" href="./assets/images/icon.png">
+    <link rel="apple-touch-icon" href="./assets/images/apple-touch-icon.png">
+    <link rel="manifest" href="./manifest.json">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <!-- Language Switcher -->
+    <div class="language-switcher">
+        <button class="lang-btn" data-lang="en">EN</button>
+        <button class="lang-btn" data-lang="ja">日本語</button>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-icon fade-in">
+                    <img src="./assets/images/icon.svg" alt="Paper Notebook Light Icon">
+                </div>
+                <h1 class="hero-title fade-in" data-en="Paper Notebook Light" data-ja="Paper Notebook Light">Paper Notebook Light</h1>
+                <p class="hero-subtitle fade-in" data-en="A warm, paper-like light theme for VS Code" data-ja="紙っぽいノート風のVS Codeライトテーマ">A warm, paper-like light theme for VS Code</p>
+                <p class="hero-description fade-in" data-en="Experience the feeling of writing with ink on slightly yellowed paper" data-ja="少し黄味がかった紙の上にインクで書いているような質感">Experience the feeling of writing with ink on slightly yellowed paper</p>
+                <div class="hero-cta fade-in">
+                    <a href="https://marketplace.visualstudio.com/items?itemName=kpab.paper-notebook-light" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M21.29 4.1L18.9 2.29C18.32 1.91 17.59 2.03 17.16 2.56L2.5 21.73C2.12 22.24 2.29 22.97 2.88 23.26L5.26 24.43C5.57 24.59 5.93 24.59 6.24 24.43L22.76 6.24C23.23 5.71 23.18 4.89 22.65 4.42L21.29 4.1Z" fill="currentColor"/>
+                        </svg>
+                        <span data-en="Install from Marketplace" data-ja="マーケットプレイスからインストール">Install from Marketplace</span>
+                    </a>
+                    <a href="https://github.com/kpab/vscode-paper-like-theme" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12C2 16.42 4.865 20.17 8.839 21.49C9.339 21.58 9.521 21.27 9.521 21C9.521 20.77 9.513 20.14 9.508 19.31C6.726 19.91 6.139 17.77 6.139 17.77C5.685 16.61 5.029 16.3 5.029 16.3C4.121 15.68 5.098 15.69 5.098 15.69C6.101 15.76 6.629 16.73 6.629 16.73C7.521 18.28 8.970 17.84 9.539 17.58C9.631 16.93 9.889 16.49 10.175 16.24C7.955 16.00 5.62 15.15 5.62 11.23C5.62 10.13 6.01 9.23 6.649 8.53C6.546 8.28 6.202 7.27 6.746 5.88C6.746 5.88 7.586 5.61 9.496 6.88C10.29 6.66 11.15 6.55 12 6.54C12.85 6.55 13.71 6.66 14.504 6.88C16.414 5.61 17.254 5.88 17.254 5.88C17.798 7.27 17.454 8.28 17.351 8.53C17.991 9.23 18.38 10.13 18.38 11.23C18.38 15.16 16.042 15.99 13.813 16.24C14.171 16.56 14.491 17.19 14.491 18.15C14.491 19.54 14.479 20.66 14.479 21C14.479 21.27 14.659 21.58 15.169 21.49C19.137 20.16 22 16.42 22 12C22 6.477 17.523 2 12 2Z" fill="currentColor"/>
+                        </svg>
+                        <span data-en="View on GitHub" data-ja="GitHubで見る">View on GitHub</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="paper-texture"></div>
+    </section>
+
+    <!-- Concept Section -->
+    <section class="concept">
+        <div class="container">
+            <h2 class="section-title fade-in-scroll" data-en="Concept" data-ja="コンセプト">Concept</h2>
+            <div class="concept-grid">
+                <div class="concept-item fade-in-scroll">
+                    <div class="concept-icon">👁️</div>
+                    <h3 data-en="Eye-Friendly" data-ja="目にやさしい">Eye-Friendly</h3>
+                    <p data-en="Off-white background instead of harsh bright white" data-ja="目にやさしいオフホワイト背景">Off-white background instead of harsh bright white</p>
+                </div>
+                <div class="concept-item fade-in-scroll">
+                    <div class="concept-icon">🖊️</div>
+                    <h3 data-en="Ink-Style Colors" data-ja="インク風の色">Ink-Style Colors</h3>
+                    <p data-en="Dark brown to dark gray text colors, not too harsh" data-ja="濃すぎないインク色（ダークブラウン〜ダークグレー）">Dark brown to dark gray text colors, not too harsh</p>
+                </div>
+                <div class="concept-item fade-in-scroll">
+                    <div class="concept-icon">📝</div>
+                    <h3 data-en="Notebook Feel" data-ja="ノート風">Notebook Feel</h3>
+                    <p data-en="Designed to feel like readable handwritten text in a notebook" data-ja="「ノートに書いた読みやすい文字」をイメージ">Designed to feel like readable handwritten text in a notebook</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Color Palette Section -->
+    <section class="colors">
+        <div class="container">
+            <h2 class="section-title fade-in-scroll" data-en="Color Palette" data-ja="カラーパレット">Color Palette</h2>
+            <div class="color-grid">
+                <div class="color-card fade-in-scroll">
+                    <div class="color-swatch" style="background-color: #F5F0E6;"></div>
+                    <div class="color-info">
+                        <h4 data-en="Background" data-ja="背景色">Background</h4>
+                        <code>#F5F0E6</code>
+                        <p data-en="Warm paper color" data-ja="温かみのある紙色">Warm paper color</p>
+                    </div>
+                </div>
+                <div class="color-card fade-in-scroll">
+                    <div class="color-swatch" style="background-color: #3A2E23;"></div>
+                    <div class="color-info">
+                        <h4 data-en="Foreground" data-ja="前景色">Foreground</h4>
+                        <code>#3A2E23</code>
+                        <p data-en="Ink-style dark brown" data-ja="インク風のダークブラウン">Ink-style dark brown</p>
+                    </div>
+                </div>
+                <div class="color-card fade-in-scroll">
+                    <div class="color-swatch" style="background-color: #854D2C;"></div>
+                    <div class="color-info">
+                        <h4 data-en="Keywords" data-ja="キーワード">Keywords</h4>
+                        <code>#854D2C</code>
+                        <p data-en="Deep brown (bold)" data-ja="濃いブラウン（太字）">Deep brown (bold)</p>
+                    </div>
+                </div>
+                <div class="color-card fade-in-scroll">
+                    <div class="color-swatch" style="background-color: #7A5136;"></div>
+                    <div class="color-info">
+                        <h4 data-en="Strings" data-ja="文字列">Strings</h4>
+                        <code>#7A5136</code>
+                        <p data-en="Brown tones" data-ja="ブラウン系">Brown tones</p>
+                    </div>
+                </div>
+                <div class="color-card fade-in-scroll">
+                    <div class="color-swatch" style="background-color: #9E9386;"></div>
+                    <div class="color-info">
+                        <h4 data-en="Comments" data-ja="コメント">Comments</h4>
+                        <code>#9E9386</code>
+                        <p data-en="Pencil-gray (italic)" data-ja="鉛筆風グレー（イタリック）">Pencil-gray (italic)</p>
+                    </div>
+                </div>
+                <div class="color-card fade-in-scroll">
+                    <div class="color-swatch" style="background-color: #A86434;"></div>
+                    <div class="color-info">
+                        <h4 data-en="Numbers" data-ja="数値">Numbers</h4>
+                        <code>#A86434</code>
+                        <p data-en="Orange-brown" data-ja="オレンジブラウン">Orange-brown</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Installation Section -->
+    <section class="installation">
+        <div class="container">
+            <h2 class="section-title fade-in-scroll" data-en="Installation" data-ja="インストール">Installation</h2>
+            <div class="installation-methods">
+                <div class="method-card fade-in-scroll">
+                    <h3 data-en="From VS Code Marketplace" data-ja="VS Code マーケットプレイスから">From VS Code Marketplace</h3>
+                    <ol>
+                        <li data-en="Open VS Code" data-ja="VS Codeを開く">Open VS Code</li>
+                        <li data-en="Go to Extensions (Ctrl+Shift+X)" data-ja="拡張機能を開く（Ctrl+Shift+X）">Go to Extensions (Ctrl+Shift+X)</li>
+                        <li data-en='Search for "Paper Notebook Light"' data-ja='"Paper Notebook Light"を検索'>Search for "Paper Notebook Light"</li>
+                        <li data-en="Click Install" data-ja="インストールをクリック">Click Install</li>
+                        <li data-en="Press Ctrl+K Ctrl+T (Cmd+K Cmd+T on macOS)" data-ja="Ctrl+K Ctrl+T を押す（macOS: Cmd+K Cmd+T）">Press Ctrl+K Ctrl+T (Cmd+K Cmd+T on macOS)</li>
+                        <li data-en='Select "Paper Notebook Light"' data-ja='"Paper Notebook Light"を選択'>Select "Paper Notebook Light"</li>
+                    </ol>
+                </div>
+                <div class="method-card fade-in-scroll">
+                    <h3 data-en="From VSIX File" data-ja="VSIXファイルから">From VSIX File</h3>
+                    <div class="code-block">
+                        <code>git clone https://github.com/kpab/vscode-paper-like-theme.git</code>
+                        <code>cd vscode-paper-like-theme</code>
+                        <code>npm run package</code>
+                        <code>code --install-extension paper-notebook-light-0.0.1.vsix</code>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recommended Fonts Section -->
+    <section class="fonts">
+        <div class="container">
+            <h2 class="section-title fade-in-scroll" data-en="Recommended Font Settings" data-ja="推奨フォント設定">Recommended Font Settings</h2>
+            <p class="fonts-intro fade-in-scroll" data-en="For a more authentic notebook feel, add these font settings to your settings.json:" data-ja="テーマと合わせて、以下のフォント設定を settings.json に追加すると、より紙ノート風の雰囲気になります。">For a more authentic notebook feel, add these font settings to your settings.json:</p>
+            <div class="code-block-large fade-in-scroll">
+                <pre><code>{
+  "editor.fontFamily": "'Iosevka', 'JetBrains Mono', 'Cascadia Code', Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontSize": 14,
+  "editor.lineHeight": 22,
+  "editor.letterSpacing": 0.2,
+  "editor.renderLineHighlight": "line",
+  "editor.cursorBlinking": "smooth"
+}</code></pre>
+            </div>
+            <div class="font-recommendations fade-in-scroll">
+                <h3 data-en="Recommended Fonts" data-ja="推奨フォント例">Recommended Fonts</h3>
+                <ul>
+                    <li><strong>Iosevka</strong> - <span data-en="Clean handwriting-inspired style" data-ja="整った手書き風・可読性高い">Clean handwriting-inspired style</span></li>
+                    <li><strong>JetBrains Mono</strong> - <span data-en="Modern and easy to read" data-ja="モダンで読みやすい">Modern and easy to read</span></li>
+                    <li><strong>Cascadia Code</strong> - <span data-en="Beautiful coding font by Microsoft" data-ja="Microsoftの美しいコーディングフォント">Beautiful coding font by Microsoft</span></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-links">
+                    <a href="https://github.com/kpab/vscode-paper-like-theme" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    <a href="https://marketplace.visualstudio.com/items?itemName=kpab.paper-notebook-light" target="_blank" rel="noopener noreferrer">Marketplace</a>
+                    <a href="https://github.com/kpab/vscode-paper-like-theme/blob/main/LICENSE" target="_blank" rel="noopener noreferrer">License (MIT)</a>
+                </div>
+                <p class="footer-copyright">
+                    &copy; 2024 kpab. <span data-en="All rights reserved." data-ja="All rights reserved.">All rights reserved.</span>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="./script.js"></script>
+</body>
+</html>
